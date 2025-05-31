@@ -1,0 +1,22 @@
+CREATE TABLE usuarios (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL CHECK (role IN ('ADMIN', 'USER')),
+    fecha_creacion DATETIME NOT NULL
+);
+
+-- Crear tabla de contenido
+CREATE TABLE contenido (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    tipo VARCHAR(30) NOT NULL,
+    cantidad_episodios INT NOT NULL,
+    duracion_promedio INT NOT NULL,
+    genero VARCHAR(100),
+    descripcion TEXT,
+    fecha_registro DATE,
+    creado_por_id BIGINT,
+    FOREIGN KEY (creado_por_id) REFERENCES usuarios(id)
+);
