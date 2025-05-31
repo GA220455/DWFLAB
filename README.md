@@ -43,7 +43,7 @@
 
 > [Base de Datos 📖](https://github.com/GA220455/DWFLAB/blob/Base-Datos/Tablas.txt)
 > 
-> [Documentacion 📖](https://github.com/GA220455/DWFLAB/blob/Base-Datos/Tablas.txt)
+> [Documentacion 📖](https://github.com/GA220455/DWFLAB/blob/Documentacion/Desafio3DWF.pdf)
 
 
 
